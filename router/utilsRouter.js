@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const { detectLanguage, translateText } = require("../utils/translateFunctions")
-const { sendMail } = require("../utils/mailFunctions")
 const {LANGUAGE_ISO_CODE} = require("../utils/dictionaries")
 
 router.get("/detect", async (req, res) => {
@@ -34,14 +33,8 @@ router.get("/translate", async (req, res) => {
     })
 });
 
-router.post("/send", (req, res) => {
-    const { senderName, senderMail, continutRecenzie} = req.body;
-    if (!senderName || !senderMail || !continutRecenzie ) {
-        return res.status(400).send("Missing Parametres");
-    }
 
-    sendMail("recenzii@gmail.com", senderMail, messageContent, `${senderName} a trimis o recenzie`);
-    res.send(200);
-})
+
+
 
 module.exports = router;

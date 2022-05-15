@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require("body-parser");
-const messagesRouter = require('./router/messagesRouter');
+const recenziiRouter = require('./router/recenziiRouter');
 const utilsRouter = require('./router/utilsRouter');
 
 const app = express();
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define routes
-app.use("/messages", messagesRouter);
+app.use("/messages", recenziiRouter);
 app.use("/utils", utilsRouter);
 
 const port = process.env.PORT || 8080;
