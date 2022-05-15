@@ -2,7 +2,8 @@
 
 Cloud computing
 
-	Pentru acest proiect am programat partea de back-end a unei aplicatii care are rolul de a aduna recenzii pentru filme si a le traduce intr-o limba la alegere. In aceasta aplicatie am folosit tehnologiile Google Cloud Platform, MySQL Workbench,  respectiv Cloud Translation API. In plus, am folosit Postman pentru a testa request-urile.
+Pentru acest proiect am programat partea de back-end a unei aplicatii care are rolul de a aduna recenzii pentru filme si a le traduce intr-o limba la alegere. In aceasta aplicatie am folosit tehnologiile Google Cloud Platform, MySQL Workbench,  respectiv Cloud Translation API. In plus, am folosit Postman pentru a testa request-urile.
+
 Link GIT: https://github.com/Cristian8899/CloudComputing
 Baza de date
 Crearea Bazei de date in MySQL Workbench:
